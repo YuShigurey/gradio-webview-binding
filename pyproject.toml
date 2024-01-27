@@ -1,0 +1,7 @@
+[project]
+name = "gradio-webview"
+version = "0.1.0"
+dependencies = [
+    "pywebview",
+    "gradio",
+]
