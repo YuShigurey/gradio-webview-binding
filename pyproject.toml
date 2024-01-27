@@ -14,17 +14,14 @@ dependencies = [
 
 
 [tool.ruff.format]
-preview = true
 quote-style = "single"
 
 [tool.ruff.lint]
 preview = true
-extend-select = ["C901"]
 
 [tool.ruff.lint.extend-per-file-ignores]
 "docs/.hooks/*" = ["INP001", "T201"]
 
-[tool.ruff.lint.isort]
 
 
 [tool.hatch.build.targets.sdist]

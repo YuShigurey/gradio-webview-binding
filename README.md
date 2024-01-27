@@ -1,3 +1,3 @@
 # gradio-webview-binding
 
-    Still trying to figure out how to gracefully exit.
+A simple demo of use gradio and pywebview together.
