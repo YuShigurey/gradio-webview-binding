@@ -1,6 +1,6 @@
 # gradio-webview-binding
 
-A simple demo of use gradio and pywebview together.
+A simple demo of use gradio and pywebview together, make your application **looks like** a native application.
 
 
 ## How to try out
