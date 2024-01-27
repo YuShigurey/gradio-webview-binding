@@ -12,6 +12,23 @@ dependencies = [
     "gradio",
 ]
 
+[project.gui-scripts]
+gradio-gui-demo = "gradio_gui_app.bootstrap:main"
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "gradio_gui_app/*.py",
+]
+exclude = [
+  "*.json",
+]
+
+
+[tool.hatch.build.targets.wheel]
+packages = [
+  "gradio_gui_app",
+]
+
 
 [tool.ruff.format]
 quote-style = "single"
@@ -22,14 +39,3 @@ preview = true
 [tool.ruff.lint.extend-per-file-ignores]
 "docs/.hooks/*" = ["INP001", "T201"]
 
-
-
-[tool.hatch.build.targets.sdist]
-include = [
-  "*.py",
-  "/tests",
-]
-exclude = [
-  "*.json",
-  "pkg/_compat.py",
-]

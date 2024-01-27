@@ -1,7 +1,7 @@
 import gradio
 
-import app
-import view
+from . import app
+from . import view
 
 
 def main():
