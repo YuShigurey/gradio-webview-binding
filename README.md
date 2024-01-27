@@ -11,3 +11,15 @@ A simple demo of use gradio and pywebview together.
 
 You can change the app's name in `[project.gui-scripts]` section of `pyproject.toml`.
 
+
+## One step further ...
+
+You can also pack the app into a zip pack, so that end user can use your app free from installing python.
+
+**However, app will took about 500MB**
+
+To perform packaging, you need to:
+
+1. Install pyoxidizer, `pip install pyoxidizer`
+2. Build the package `pyoxidizer build`
+3. Find out more about `pyoxidizer` at https://pyoxidizer.readthedocs.io/en/stable/
